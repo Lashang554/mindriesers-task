@@ -1,0 +1,159 @@
+
+
+
+
+   body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #18191a;
+    color: white;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #242526;
+    padding: 10px 16px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .left-nav input {
+    background: #3a3b3c;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 12px;
+    color: white;
+    margin-left: 10px;
+  }
+  
+  .left-nav, .middle-nav, .right-nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .middle-nav i, .right-nav i {
+    font-size: 18px;
+    color: gray;
+    cursor: pointer;
+  }
+  
+  .middle-nav .active {
+    color: #1877f2;
+  }
+  
+  .profile-pic {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+  
+  .container {
+    display: flex;
+    padding: 10px 20px;
+  }
+  
+  .sidebar, .rightbar {
+    width: 20%;
+    padding: 10px;
+  }
+  
+  .sidebar div, .contact, .friend {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 0;
+  }
+  
+  .sidebar-img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+  }
+  
+  .feed {
+    width: 60%;
+    padding: 0 10px;
+  }
+  
+  .post-box {
+    background: #242526;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .post-box input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    background: #3a3b3c;
+    color: white;
+    margin-bottom: 8px;
+  }
+  
+  .post-options span {
+    margin-right: 20px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .stories {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px 0;
+    margin-bottom: 10px;
+  }
+  
+  .story {
+    background: #3a3b3c;
+    border-radius: 10px;
+    width: 100px;
+    flex: 0 0 auto;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  .story img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 4px;
+  }
+  
+  .post {
+    background: #242526;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .post img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 8px;
+  }
+  
+  .rightbar h4 {
+    margin-top: 20px;
+  }
+  
+  .friend img, .contact img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+  }
+  
+  .friend button {
+    margin-right: 5px;
+    background: #3a3b3c;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
