@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}  
+   .container{
+    display: flex;
+    height: 100vh;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+   }
+   h1{
+    text-align: center;
+    margin-top: 10px;
+   }
+ .sun{
+    height: 500px;
+    width: 500px;
+    border: 2px solid none;
+    display: flex;
+    justify-content: center;
+    border-radius: 250px;
+    background-color: rgb(206, 125, 11);
+    box-shadow:  -1px 0px 18px 30px rgb(181, 92, 9);
+   cursor: pointer;
+}
+
+.sun:hover {
+  background-color: rgb(86, 82, 82);
+  cursor: pointer;
+  box-shadow: inset 2px 2px 20px 50px rgb(114, 113, 113);
+  transition: 2s;
+
+}
+
+
+ 
