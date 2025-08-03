@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simplified Layout</title>
+  <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      padding: 20px;
+      background: #c8facc;
+      font-family: sans-serif;
+    }
+
+    .outer {
+      border: 3px solid green;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .section {
+      border: 3px solid blue;
+      background: #a8e4fa;
+      padding: 10px;
+    }
+
+    .flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .box {
+      height: 80px;
+      flex: 1;
+    }
+
+    .beige {
+      background: #fcd9a8;
+      border: 3px solid salmon;
+    }
+
+    .center {
+      background: pink;
+      border: 3px solid salmon;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .center-inner {
+      display: flex;
+      width: 90%;
+      height: 70%;
+      background: pink;
+      border: 5px solid red;
+    }
+
+    .center-inner div {
+      flex: 1;
+      border-left: 2px solid red;
+    }
+
+    .center-inner div:first-child {
+      border-left: none;
+    }
+
+    .middle {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 10px;
+    }
+
+    .middle-box {
+      background: pink;
+      border: 3px solid brown;
+    }
+
+    .middle-left {
+      height: 200px;
+    }
+
+    .middle-right {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .middle-small {
+      height: 95px;
+    }
+
+    .bottom-box {
+      height: 80px;
+      flex: 1;
+    }
+
+    .blueviolet {
+      background: #d6d4fc;
+      border: 3px solid blueviolet;
+    }
+
+    .salmon {
+      background: #fcd9a8;
+      border: 3px solid salmon;
+    }
+  </style>
+</head>
+<body>
+  <div class="outer">
+    <div class="section">
+      <div class="flex">
+        <div class="box beige"></div>
+        <div class="box center">
+          <div class="center-inner">
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="box beige"></div>
+      </div>
+    </div>
+
+    
+    <div class="middle">
+      <div class="middle-box middle-left"></div>
+      <div class="middle-right">
+        <div class="middle-box middle-small"></div>
+        <div class="middle-box middle-small"></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="flex">
+        <div class="bottom-box blueviolet"></div>
+        <div class="bottom-box salmon"></div>
+        <div class="bottom-box salmon"></div>
+        <div class="bottom-box blueviolet"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
