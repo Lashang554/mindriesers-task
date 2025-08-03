@@ -1,0 +1,173 @@
+
+
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+/* Container */
+.container {
+  height: 500px;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQdiS1K2WtTm6qumJ-KpIqVmOZkOdDu-myaQ&s");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+}
+
+/* Navbar */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+/* Logo */
+.logo img {
+  height: 50px;
+  width: auto;
+  color:white;
+}
+
+/* Nav links */
+.nav-bar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin-left: 600px;
+
+}
+
+.nav-bar .nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 15px;  /* Add some padding for better hover area */
+  transition: all 0.3s ease;
+  border: 2px solid transparent; /* Start with invisible border */
+}
+
+.nav-bar .nav-links li a:hover {
+    
+  border: 2px solid none;  /* Show white border on hover */
+  border-radius: 20px;
+  background-color: rgba(22, 20, 20, 0.1); /* Optional: slight background */
+}
+
+
+/* Join Button */
+.join-btn button {
+  padding: 15px 30px;
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+/* Center Content */
+.paragraph {
+  text-align: center;
+  margin-top: 100px;
+  color: white;
+  font-size: 40px;
+}
+
+.serach-btn {
+  margin-top: 20px;
+  display: block; 
+  width: 100%;    /* Optional: full width container */
+  text-align: center; /* Center content inside */
+}
+
+.serach-btn input {
+  width: 500px;  
+  height: 50px;      /* ✅ Fixed width */
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.photoBy{
+  display: flex;
+  color: aliceblue;
+  margin-left: 1100px;
+  margin-top: 120px;
+
+}
+
+.nav-down {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-down nav {
+  display: flex;
+  gap: 70px;
+  font-size: 20px;
+}
+
+.nav-down nav a {
+text-decoration: none;
+color:dimgrey;
+padding: 8px 15px;
+
+ 
+ 
+}
+
+
+.nav-down nav a:hover {
+  border: 2px solid none;  /* Show white border on hover */
+  border-radius: 20px;
+  background-color: rgba(22, 20, 20, 0.1); /* Optional: slight background */
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.pargh p {
+  font-size: 30px;
+}
+
+.trending input {
+  height: 40px;
+  text-align: center;
+  font-size: medium;
+}
+.image {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+.image div img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  display: block;
+  border-radius: 20px;
+}
+
+
+
+
+
+
+
+
