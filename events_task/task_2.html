@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 2 - Change Background Color</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Task 2: Change Background Color</h2>
+    <input type="text" placeholder="Type a color and press Enter"
+           onkeyup="if(event.key==='Enter'){document.body.style.backgroundColor=this.value; this.value='';}">
+  </div>
+</body>
+</html>

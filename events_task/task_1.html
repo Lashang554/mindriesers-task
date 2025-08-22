@@ -1,0 +1,48 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Show Key Pressed</title>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 30px;
+    border-radius: 12px;
+    background: #ffffffcc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: 300px;
+  }
+  
+  input {
+    width: 200px;
+    height: 35px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 1px solid #888;
+  }
+  
+ 
+</style>
+</head>
+<body>
+  <div class="container">
+    <p>Press any key in the input:</p>
+    <input type="text" onkeydown="document.getElementById('keyDisplay').innerText='Key Pressed: ' + event.key">
+    <div id="keyDisplay">Key pressed will appear here</div>
+  </div>
+</body>
+</html>
